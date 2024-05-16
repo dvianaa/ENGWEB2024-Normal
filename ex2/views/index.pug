@@ -1,0 +1,26 @@
+extends layout
+
+block content
+  h1 Indíce de Contratos
+    .w3-container
+        table.w3-table-all
+            thead
+                tr
+                    th Id
+                    th Objeto do Contrato
+                    th Data da Celebração do Contrato 
+                    th Preço Contratual
+                    th NIPC da entidade comunicante
+                    th Entidade comunicante
+
+            tbody
+                each contrato in contratos
+                    tr
+                        td
+                            a(href='/contratos/' + contrato._id)= contrato._id
+                        td= contrato.objectoContrato
+                        td= contrato.dataCelebracaoContrato
+                        td= contrato.precoContratual
+                        td
+                          a(href='/entidades/' + contrato.NIPC_entidade_comunicante)= contrato.NIPC_entidade_comunicante
+                        td= contrato.entidade_comunicante

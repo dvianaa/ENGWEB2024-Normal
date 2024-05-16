@@ -1,0 +1,27 @@
+extends layout
+
+block content
+  h2 Detalhes do Contrato
+  body
+    h1 Detalhes do Contrato
+    ul
+      li
+        strong ID Contrato: 
+        | #{contrato._id}
+      li
+        strong Objecto Contrato: 
+        | #{contrato.objectoContrato ? contrato.objectoContrato : "Não disponível"}
+      li
+        strong Data de Celebração: 
+        | #{contrato.dataCelebracaoContrato}
+      li
+        strong Preço Contratual: 
+        | #{contrato.precoContratual}€
+      li
+        strong NIPC Entidade Comunicante: 
+        | #{contrato.NIPC_entidade_comunicante}
+      li
+        strong Entidade Comunicante: 
+        | #{contrato.entidade_comunicante}
+    a(href='/') Voltar à página principal
+
