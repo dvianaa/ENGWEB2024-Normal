@@ -20,7 +20,7 @@ O dataset foi importado para o MongoDB usando o comando: mongoimport -d contrato
 
 Para executar basta correr: "npm run start" dentro da diretoria do exercicio em questão
 
-Por algum motivo que não consegui entender, no exercício 2 a minha rota '/' não dá get dos contratos, apesar que estar tudo corretamente implementado.
+Por algum motivo que não consegui entender, no exercício 2 a minha rota '/' não dá get dos contratos, apesar de aparentemente estar tudo corretamente implementado.
 O exercício 3 não foi feito.
 
 
